@@ -1,4 +1,3 @@
-@yield('content')
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,25 +14,25 @@
 </head>
 <body>
 
-
+@yield('content')
 <header style="padding-top:50px; padding-bottom:30px">
-        <nav class="navbar navbar-fixed-top" style="padding-left:0px; padding-right:20px; background-color: navy; ">
+<nav class="navbar navbar-fixed-top" style="padding-left:0px; padding-right:20px; background-color: navy; ">
 
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#"></a>
-            </div>
-            <ul class="nav navbar-nav">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#"></a>
+    </div>
+    <ul class="nav navbar-nav">
         <li><a href="{{ url('/') }}">Página Inicial</a></li>
-        <li><a href="{{ url('alpha-imoveis/como-funciona') }}">Como Funciona</a></li>
-        <li><a href="{{ url('alpha-imoveis/planos') }}">Planos</a></li>
-        <li><a href="{{ url('alpha-imoveis/suporte') }}">Suporte</a></li>
+        <li><a href="{{ route('como-funciona.index') }}">Como Funciona</a></li>
+        <li><a href="{{ route('planos.index') }}">Planos</a></li>
+        <li><a href="{{ route('suporte.index') }}">Suporte</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-        <li><a href="{{ url('alpha-imoveis/signup') }}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="{{ url('alpha-imoveis/login') }}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="{{ route('signup.index') }}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="{{ route('login.index') }}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
 
-        </nav>
+</nav>
 
 </header>
 

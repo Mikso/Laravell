@@ -55,11 +55,11 @@ class SignupController extends Controller
     public function store(Request $request)
     {
      
-        $dataForm = $request->except('_token');
+        $dataForm = $request->except('_token'); // capturo tudo, exceto o token
         
-        $insert = $this->usuario->create($dataForm);
+        $insert = $this->usuario->create($dataForm); // So vai inserir os dados que defini na model
 
-        if($insert) 
+        if($insert) // Se tiver inserido no db com sucesso, retorna o login senao...
             return 'Inserido';
             else
             return 'Não Inserido';
