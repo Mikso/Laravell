@@ -49,8 +49,8 @@
         <input type="password" name="senha" class="form-control" placeholder="Password" required><br>
        
     <div class="text-center">
-        <button type="submit" class="btn btn-success" style="width: 50%">Login</button>
-
+        <button type="submit" class="btn btn-success" style="width: 50%">Login</button><br><br>
+        <a href="{{ route('signup.index') }}">Ou Cadastre-se</a>
     </div>
 
 

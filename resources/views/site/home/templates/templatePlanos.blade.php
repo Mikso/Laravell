@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{{ url('css/assets/css/bootstrap.css') }}">
     <script src="{{ url('css/assets/js/jquery.js') }}"></script>
     <script src="{{ url('css/assets/js/bootstrap.js')}}"></script>
-  
+    <link rel="stylesheet" href="{{ url('css/assets/css/planos.css') }}">
 </head>
 <body>
 
@@ -37,46 +37,48 @@
 
 </header>
 
-<div class="container" style="height:100%">
-  <div class="panel text-center" style="width: 30%;">
-    <div class="panel-heading" style="
-        background-color: #ffff00;
-        font-size:30px;
-        font-family: Open Sans;
-        ">Standard
 
-</div>
-    
-    <div class="header" style="
-        color: white;
-        background-color: #1f1f2e; 
-        font-size:75px;
-    	border-radius: 0px 0px 5px 5px;
-        font-family:'Open Sans';
-        font-style:condense;
-    ">
-			<span>$</span>29<sup>99</sup>
-            <p class="month" style="
-            font-size:20px;
-            color: #ccccb3;
-            padding-bottom: 20px;
-            ">per month</p>
-            
-    </div>
-    
-
-
-    <div class="panel-body" style="color: white ;background-color: #1f1f2e; font-size:20px" >Crie até 3 anúncios</div>
-    <div class="panel-body" style="color: white ;background-color: #1f1f2e; font-size:20px" >Exiba até 4 fotos</div>
-      <button class="btn btn-primary" style="
-            width: 100%;
-            border-radius: 0px 0px 5px 5px;
-      ">Enviar</button>
-
+<div class="price-table-wrapper">
+  <div class="pricing-table">
+    <h2 class="pricing-table__header">- BASICO -</h2>
+    <h3 class="pricing-table__price">$15</h3>
+    <a target="_blank" class="pricing-table__button" href="{{ route('login.index') }}">
+      Adquira agora!
+    </a>
+    <ul class="pricing-table__list text-center">
+      <li>30 day free trial</li>
+      <li>50gb storage space</li>
+      <li>20% discount</li>
+      <li>24 hour support</li>
+    </ul>
+  </div>
+  <div class="pricing-table featured-table">
+    <h2 class="pricing-table__header">- MEDIO -</h2>
+    <h3 class="pricing-table__price">$20</h3>
+    <a target="_blank" class="pricing-table__button" href="{{ route('login.index') }}">
+       Adquira agora!
+    </a>
+    <ul class="pricing-table__list">
+      <li>40 day free trial</li>
+      <li>100gb storage space</li>
+      <li>25% discount</li>
+      <li>24 hour support</li>
+    </ul>
+  </div>
+  <div class="pricing-table">
+    <h2 class="pricing-table__header">- PLUS -</h2>
+    <h3 class="pricing-table__price">$25</h3>
+    <a target="_blank" class="pricing-table__button" href="{{ route('login.index') }}">
+       Adquira agora!
+    </a>
+    <ul class="pricing-table__list">
+      <li>50 day free trial</li>
+      <li>200gb storage space</li>
+      <li>40% discount</li>
+      <li>24 hour support</li>
+    </ul>
   </div>
 </div>
-
-
 
 
 

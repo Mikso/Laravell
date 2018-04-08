@@ -10,7 +10,7 @@ class Usuario extends Model
 
 
     protected $fillable =[
-        'nome', 'sobrenome', 'idade', 'cpf', 'cep', 'email', 'password'
+        'nome', 'sobrenome', 'idade', 'cpf', 'cep', 'email', 'password' // Campos que autorizo haver mudanças ao logar/cadastrar
     ];
 
 }
