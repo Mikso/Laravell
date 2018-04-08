@@ -24,6 +24,7 @@
     <ul class="nav navbar-nav">
         <li><a href="{{ url('/') }}">Página Inicial</a></li>
         <li><a href="{{ url('alpha-imoveis/como-funciona') }}">Como Funciona</a></li>
+        <li><a href="{{ url('alpha-imoveis/planos') }}">Planos</a></li>
         <li><a href="{{ url('alpha-imoveis/suporte') }}">Suporte</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">

@@ -18,8 +18,8 @@ class CreateUsuarioTable extends Migration
             $table->string('nome', 20);
             $table->string('sobrenome', 20);
             $table->string('idade', 2);
-            $table->string('cpf', 11)->unique();
-            $table->string('cep', 8);
+            $table->string('cpf', 9)->unique();
+            $table->string('cep', 9);
             $table->string('email', 25)->unique();
             $table->string('password',12);
             $table->rememberToken();

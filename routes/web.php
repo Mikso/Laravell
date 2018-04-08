@@ -24,11 +24,7 @@ Route::resource('/alpha-imoveis/signup', 'Index\SignupController');
 Route::resource('/alpha-imoveis/login', 'Index\LoginController');
 Route::resource('/alpha-imoveis/signup/create', 'Index\SignupController');
 Route::resource('/alpha-imoveis/suporte', 'Index\SuporteController');
-
-
-Route::post('/alpha-imoveis/suporte/enviar', function(Illuminate\Http\Request $request){
-    var_dump($request->all());
-});
+Route::resource('/alpha-imoveis/planos', 'Index\PlanosController');
 
 
 /*

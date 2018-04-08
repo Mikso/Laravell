@@ -4,24 +4,9 @@ namespace App\Http\Controllers\Index;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Model\Signup\Usuario;
 
-
-class SignupController extends Controller
+class PlanosController extends Controller
 {
-
-    private $usuario;
-
-    
-      public function __construct(Usuario $usuario) { // Construtor do PHP, observe a barra dupla
-          $this->usuario = $usuario;
-         
-      }
-    
-
-
-
-
     /**
      * Display a listing of the resource.
      *
@@ -29,8 +14,8 @@ class SignupController extends Controller
      */
     public function index()
     {
-        $title = 'SignUp'; // titulo da pagina
-        return view('site.home.signup', compact('title')); // retorno a view
+        $title = 'Planos';
+        return view('site.home.planos', compact('title'));
     }
 
     /**
@@ -40,10 +25,7 @@ class SignupController extends Controller
      */
     public function create()
     {
-        //$dataForm = $request->all();
-
-      //$insert = $this->usuario->insert($dataForm);
-      return 'testando';
+        //
     }
 
     /**
@@ -54,16 +36,7 @@ class SignupController extends Controller
      */
     public function store(Request $request)
     {
-     
-        $dataForm = $request->except('_token');
-        
-        $insert = $this->usuario->create($dataForm);
-
-        if($insert) 
-            return 'Inserido';
-            else
-            return 'Não Inserido';
-
+        //
     }
 
     /**

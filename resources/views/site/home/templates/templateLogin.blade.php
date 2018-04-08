@@ -22,14 +22,15 @@
                 <a class="navbar-brand" href="#"></a>
             </div>
             <ul class="nav navbar-nav">
-                <li><a href="{{ url('/') }}">Página Inicial</a></li>
-                <li><a href="{{ url('alpha-imoveis/como-funciona') }}">Como funciona</a></li>
-                <li><a href="#">Suporte</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="{{ url('alpha-imoveis/signup') }}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-             
-            </ul>
+        <li><a href="{{ url('/') }}">Página Inicial</a></li>
+        <li><a href="{{ url('alpha-imoveis/como-funciona') }}">Como Funciona</a></li>
+        <li><a href="{{ url('alpha-imoveis/planos') }}">Planos</a></li>
+        <li><a href="{{ url('alpha-imoveis/suporte') }}">Suporte</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="{{ url('alpha-imoveis/signup') }}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="{{ url('alpha-imoveis/login') }}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
 
         </nav>
 

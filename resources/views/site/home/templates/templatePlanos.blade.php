@@ -6,13 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   
-	<title>{{ $title or 'Sign Up'}}</title>
+	<title>{{ $title or 'Planos'}}</title>
 
     <link rel="stylesheet" href="{{ url('css/assets/css/bootstrap.css') }}">
     <script src="{{ url('css/assets/js/jquery.js') }}"></script>
     <script src="{{ url('css/assets/js/bootstrap.js')}}"></script>
-    <script src="{{ url('css/assets/js/mask.js')}}"></script>
-
+  
 </head>
 <body>
 
@@ -37,6 +36,48 @@
         </nav>
 
 </header>
+
+<div class="container" style="height:100%">
+  <div class="panel text-center" style="width: 30%;">
+    <div class="panel-heading" style="
+        background-color: #ffff00;
+        font-size:30px;
+        font-family: Open Sans;
+        ">Standard
+
+</div>
+    
+    <div class="header" style="
+        color: white;
+        background-color: #1f1f2e; 
+        font-size:75px;
+    	border-radius: 0px 0px 5px 5px;
+        font-family:'Open Sans';
+        font-style:condense;
+    ">
+			<span>$</span>29<sup>99</sup>
+            <p class="month" style="
+            font-size:20px;
+            color: #ccccb3;
+            padding-bottom: 20px;
+            ">per month</p>
+            
+    </div>
+    
+
+
+    <div class="panel-body" style="color: white ;background-color: #1f1f2e; font-size:20px" >Crie até 3 anúncios</div>
+    <div class="panel-body" style="color: white ;background-color: #1f1f2e; font-size:20px" >Exiba até 4 fotos</div>
+      <button class="btn btn-primary" style="
+            width: 100%;
+            border-radius: 0px 0px 5px 5px;
+      ">Enviar</button>
+
+  </div>
+</div>
+
+
+
 
 
 
@@ -64,18 +105,6 @@
 
 </footer>
 
-
-<script>
-
-// Mascara de entrada
-$(document).ready(function(){
-  $('#CPF').mask('999999-99');
-  $('#CEP').mask('99999-999');
-
-});
-
-
-</script>
 
 
 </body>
